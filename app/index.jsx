@@ -1,4 +1,4 @@
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native'; // ✅ Import TouchableOpacity
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { LinearGradient } from 'expo-linear-gradient'; // ✅ Import LinearGradient
@@ -27,6 +27,17 @@ export default function Index() {
           <Text style={{ fontSize: hp(5) }} className="text-white font-bold tracking-wide">
             For You
           </Text>
+        </View>
+
+        <View>
+          <TouchableOpacity
+            style={{ height: hp(7), width: wp(80) }}
+            className="bg-rose-500 flex items-center justify-center mx-auto rounded-full border-[2px] border-neutral-200"
+          >
+            <Text style={{ fontSize: hp(3) }} className="text-white font-bold tracking-widest">
+              Get Started
+            </Text>
+          </TouchableOpacity>
         </View>
       </LinearGradient>
     </View>
